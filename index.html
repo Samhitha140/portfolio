@@ -121,7 +121,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:0 2.5rem;height:64px
 /* ── PROJECTS ── */
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
 .proj-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:2.5rem;position:relative;overflow:hidden;transition:all .3s;cursor:default}
-.proj-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(91,124,250,.08) 0%,transparent 55%);opacity:0;transition:opacity .3s}
+.proj-card::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mx,50%) var(--my,50%),rgba(91,124,250,.08) 0%,transparent 55%);opacity:0;transition:opacity .3s;pointer-events:none}
 .proj-card:hover::before{opacity:1}
 .proj-card:hover{border-color:var(--accent)}
 .proj-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.75rem}
